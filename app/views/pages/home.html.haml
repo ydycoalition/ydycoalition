@@ -2,32 +2,21 @@
   %input#mobile-menu.rk-mobile-menu{:type => "checkbox"}/
   %label{:for => "mobile-menu"}
     %svg
-      %use{"xlink:href" => "assets/img/symbols.svg#bar"}
+      %use{"xlink:href" => "assets/images/symbols.svg#bar"}
     %svg
-      %use{"xlink:href" => "assets/img/symbols.svg#bar"}
+      %use{"xlink:href" => "assets/images/symbols.svg#bar"}
     %svg
-      %use{"xlink:href" => "assets/img/symbols.svg#bar"}
+      %use{"xlink:href" => "assets/images/symbols.svg#bar"}
   .ae-container-fluid.rk-topbar
     %h1.rk-logo
-      %a{:href => "index.html"}
-        urku portfolio
-        %sup tm
+      = link_to "DO Coalition", root_path
     %nav.rk-navigation
       %ul.rk-menu
         %li.active.rk-menu__item
-          %a.rk-menu__link{:href => "index.html"} Home
+          = link_to "Home", root_path, class: 'rk-menu__link'
         %li.rk-menu__item
-          %a.rk-menu__link{:href => "portfolio.html"} Portfolio
-          %nav.rk-menu__sub
-            %ul.rk-container
-              %li.rk-menu__item
-                %a.rk-menu__link{:href => "portfolio.html"} Flex
-              %li.rk-menu__item
-                %a.rk-menu__link{:href => "portfolio-alt.html"} Switch
-              %li.rk-menu__item
-                %a.rk-menu__link{:href => "portfolio-raw.html"} Static
-              %li.rk-menu__item
-                %a.rk-menu__link{:href => "portfolio-masonry.html"} Masonry
+          = link_to "Actions", 
+          %a.rk-menu__link{:href => "portfolio.html"} Actions
         %li.rk-menu__item
           %a.rk-menu__link{:href => "blog.html"} Blog
         %li.rk-menu__item
