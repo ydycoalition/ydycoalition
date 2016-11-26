@@ -2,7 +2,8 @@ Rails.application.routes.draw do
 
   root 'pages#home'
 
-  resource :pages
+  resources :pages
+  resources :actions
 
   # get 'actions' => 'pages#actions'
 
