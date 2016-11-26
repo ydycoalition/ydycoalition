@@ -1,0 +1,170 @@
+%header.ae-container-fluid.ae-container-fluid--full.rk-header
+  %input#mobile-menu.rk-mobile-menu{:type => "checkbox"}/
+  %label{:for => "mobile-menu"}
+    %svg
+      %use{"xlink:href" => "assets/img/symbols.svg#bar"}
+    %svg
+      %use{"xlink:href" => "assets/img/symbols.svg#bar"}
+    %svg
+      %use{"xlink:href" => "assets/img/symbols.svg#bar"}
+  .ae-container-fluid.rk-topbar
+    %h1.rk-logo
+      %a{:href => "index.html"}
+        urku portfolio
+        %sup tm
+    %nav.rk-navigation
+      %ul.rk-menu
+        %li.active.rk-menu__item
+          %a.rk-menu__link{:href => "index.html"} Home
+        %li.rk-menu__item
+          %a.rk-menu__link{:href => "portfolio.html"} Portfolio
+          %nav.rk-menu__sub
+            %ul.rk-container
+              %li.rk-menu__item
+                %a.rk-menu__link{:href => "portfolio.html"} Flex
+              %li.rk-menu__item
+                %a.rk-menu__link{:href => "portfolio-alt.html"} Switch
+              %li.rk-menu__item
+                %a.rk-menu__link{:href => "portfolio-raw.html"} Static
+              %li.rk-menu__item
+                %a.rk-menu__link{:href => "portfolio-masonry.html"} Masonry
+        %li.rk-menu__item
+          %a.rk-menu__link{:href => "blog.html"} Blog
+        %li.rk-menu__item
+          %a.rk-menu__link{:href => "#0"} Pages
+          %nav.rk-menu__sub
+            %ul.rk-container
+              %li.rk-menu__item
+                %a.rk-menu__link{:href => "about.html"} About
+              %li.rk-menu__item
+                %a.rk-menu__link{:href => "documentation.html"} Documentation
+              %li.rk-menu__item
+                %a.rk-menu__link{:href => "design-styles.html"} Design Styles
+        %li.rk-menu__item
+          %a.rk-menu__link{:href => "contact.html"} Contact Us
+      %form.rk-search
+        %input#urku-search.rk-search-field{:placeholder => "Search", :type => "text"}/
+        %label{:for => "urku-search"}
+          %svg
+            %use{"xlink:href" => "assets/img/symbols.svg#icon-search"}
+%section.ae-container-fluid.rk-main
+  %input#layout-base.layout-ctrl-input{:checked => "checked", :name => "layout-ctrl", :type => "radio"}/
+  .ae-container-fluid.rk-layout-ctrl-cont
+    %label.rk-layout-ctrl{:for => "layout-base"}
+      %svg
+        %use{"xlink:href" => "assets/img/symbols.svg#icon-view-default"}
+  %input#layout-grid.layout-ctrl-input{:name => "layout-ctrl", :type => "radio"}/
+  .ae-container-fluid.rk-layout-ctrl-cont
+    %label.rk-layout-ctrl{:for => "layout-grid"}
+      %svg
+        %use{"xlink:href" => "assets/img/symbols.svg#icon-view-alt"}
+  .rk-layout-ctrl-mobile
+    %svg.layout-mob-1{:viewbox => "0 0 9 9"}
+      %rect{:fill => "currentColor", :height => "100%", :width => "100%"}
+    %svg.layout-mob-2{:viewbox => "0 0 9 9"}
+      %rect{:fill => "currentColor", :height => "100%", :width => "100%"}
+    %svg.layout-mob-3{:viewbox => "0 0 9 9"}
+      %rect{:fill => "currentColor", :height => "100%", :width => "100%"}
+      %svg.layout-mob-4{:viewbox => "0 0 9 9"}
+        %rect{:fill => "currentColor", :height => "100%", :width => "100%"}
+    %section.ae-container-fluid.ae-container-fluid--inner.loading.rk-portfolio
+      .rk-portfolio__items
+        %a.rk-item.rk-item--flex.item-1.rk-size-12.rk-tosize-6.rk-landscape{:href => "portfolio-item.html"}
+          .item-meta
+            %h2 Essential Stationery
+            %p Branding
+        %a.rk-item.rk-item--flex.item-2.rk-size-6.rk-portrait{:href => "portfolio-item.html"}
+          .item-meta
+            %h2 Pickled Tousled
+            %p Art Direction
+        %a.rk-item.rk-item--flex.item-3.rk-size-6.rk-tosize-4.rk-portrait.rk-tosquare{:href => "portfolio-item.html"}
+          .item-meta
+            %h2 Waistcoat vegan
+            %p Graphic Design
+        .rk-items-cont.rk-size-6.rk-tosize-8
+          %a.rk-item.rk-item--flex.item-4.rk-size-12.rk-tosize-6.rk-landscape{:href => "portfolio-item.html"}
+            .item-meta
+              %h2 Tumblr hammock
+              %p Packaging
+          %a.rk-item.rk-item--flex.item-5.rk-size-12.rk-tosize-6.rk-landscape{:href => "portfolio-item.html"}
+            .item-meta
+              %h2 Biodiesel etsy
+              %p Branding
+        %a.rk-item.rk-item--flex.item-6.rk-size-6.rk-tosize-4.rk-portrait.rk-tosquare{:href => "portfolio-item.html"}
+          .item-meta
+            %h2 Gentrify artisan
+            %p Graphic Design
+        .rk-items-cont.rk-size-4.rk-tosize-8
+          %a.rk-item.rk-item--flex.item-7.rk-size-12.rk-tosize-6.rk-square{:href => "portfolio-item.html"}
+            .item-meta
+              %h2 Plaid austin
+              %p Graphic Design
+          %a.rk-item.rk-item--flex.item-8.rk-size-12.rk-tosize-6.rk-square{:href => "portfolio-item.html"}
+            .item-meta
+              %h2 Trust fund
+              %p Packaging
+        %a.rk-item.rk-item--flex.item-9.rk-size-8.rk-tosize-3.rk-square{:href => "portfolio-item.html"}
+          .item-meta
+            %h2 Gentrify pork
+            %p Branding
+        %a.rk-item.rk-item--flex.item-10.rk-size-6.rk-tosize-3.rk-portrait.rk-tosquare{:href => "portfolio-item.html"}
+          .item-meta.rk-tosmallfont
+            %h2 Waistcoat ugh
+            %p UI/UX
+        .rk-items-cont.rk-size-6.rk-tosize-6
+          %a.rk-item.rk-item--flex.item-11.rk-size-12.rk-tosize-6.rk-landscape.rk-tosquare{:href => "portfolio-item.html"}
+            .item-meta
+              %h2 Deep v kogi
+              %p Graphic Design
+          %a.rk-item.rk-item--flex.item-12.rk-size-12.rk-tosize-6.rk-landscape.rk-tosquare{:href => "portfolio-item.html"}
+            .item-meta
+              %h2 Venmo trust
+              %p Packaging
+        %a.rk-item.rk-item--flex.item-13.rk-size-8.rk-tosize-3.rk-square{:href => "portfolio-item.html"}
+          .item-meta
+            %h2 Venmo trust
+            %p Ui/UX
+        .rk-items-cont.rk-size-4.rk-tosize-6
+          %a.rk-item.rk-item--flex.item-14.rk-size-12.rk-tosize-6.rk-square{:href => "portfolio-item.html"}
+            .item-meta
+              %h2 Gentrify semiotic
+              %p Art Direction
+          %a.rk-item.rk-item--flex.item-15.rk-size-12.rk-tosize-6.rk-square{:href => "portfolio-item.html"}
+            .item-meta
+              %h2 Migas artisan
+              %p Photography
+  %footer.ae-container-fluid.rk-footer
+    .ae-grid.ae-grid--collapse
+      .ae-grid__item.item-lg-4.au-xs-ta-center.au-lg-ta-left
+        %ul.rk-menu.rk-footer-menu
+          %li.rk-menu__item
+            %a.rk-menu__link{:href => "about.html"} About
+          %li.rk-menu__item
+            %a.rk-menu__link{:href => "documentation.html"} Docs
+          %li.rk-menu__item
+            %a.rk-menu__link{:href => "contact.html"} Contact
+        %p.rk-footer__text.rk-footer__copy
+          %span.ae-u-bold ©
+          = succeed "All" do
+            %span.ae-u-bolder 2015 URKU PORTFOLIO
+      .ae-grid__item.item-lg-4.au-xs-ta-center
+        %a.rk-social-btn{:href => "#0"}
+          %svg
+            %use{"xlink:href" => "assets/img/symbols.svg#icon-facebook"}
+        %a.rk-social-btn{:href => "#0"}
+          %svg
+            %use{"xlink:href" => "assets/img/symbols.svg#icon-twitter"}
+        %a.rk-social-btn{:href => "#0"}
+          %svg
+            %use{"xlink:href" => "assets/img/symbols.svg#icon-pinterest"}
+        %a.rk-social-btn{:href => "#0"}
+          %svg
+            %use{"xlink:href" => "assets/img/symbols.svg#icon-tumblr"}
+      .ae-grid__item.item-lg-4.au-xs-ta-center.au-lg-ta-right
+        %p.rk-footer__text.rk-footer__contact
+          %span.ae-u-bold Email:
+          %span.ae-u-bolder
+            %a.rk-dark-color{:href => "#0"} contact@urkuportfolio.com
+        %p.rk-footer__text.rk-footer__by
+          Theme by
+          %a.ae-u-bolder{:href => "http://pixeden.com"} Pixeden.
