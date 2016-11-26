@@ -1,0 +1,27 @@
+%header.ae-container-fluid.ae-container-fluid--full.rk-header
+  %input#mobile-menu.rk-mobile-menu{:type => "checkbox"}/
+  %label{:for => "mobile-menu"}
+    %svg
+      %use{"xlink:href" => "assets/images/symbols.svg#bar"}
+    %svg
+      %use{"xlink:href" => "assets/images/symbols.svg#bar"}
+    %svg
+      %use{"xlink:href" => "assets/images/symbols.svg#bar"}
+  .ae-container-fluid.rk-topbar
+    %h1.rk-logo
+      = link_to "DO Coalition", root_path
+    %nav.rk-navigation
+      %ul.rk-menu
+        %li.active.rk-menu__item
+          = link_to "Home", root_path, class: 'rk-menu__link'
+        %li.rk-menu__item
+          = link_to "Actions", actions_path, class: 'rk-menu__link'
+        %li.rk-menu__item
+          %a.rk-menu__link{:href => "blog.html"} Blog
+        %li.rk-menu__item
+          %a.rk-menu__link{:href => "contact.html"} Contact Us
+      %form.rk-search
+        %input#urku-search.rk-search-field{:placeholder => "Search", :type => "text"}/
+        %label{:for => "urku-search"}
+          %svg
+            %use{"xlink:href" => "assets/img/symbols.svg#icon-search"}

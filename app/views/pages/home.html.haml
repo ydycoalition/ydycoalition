@@ -1,41 +1,3 @@
-%header.ae-container-fluid.ae-container-fluid--full.rk-header
-  %input#mobile-menu.rk-mobile-menu{:type => "checkbox"}/
-  %label{:for => "mobile-menu"}
-    %svg
-      %use{"xlink:href" => "assets/images/symbols.svg#bar"}
-    %svg
-      %use{"xlink:href" => "assets/images/symbols.svg#bar"}
-    %svg
-      %use{"xlink:href" => "assets/images/symbols.svg#bar"}
-  .ae-container-fluid.rk-topbar
-    %h1.rk-logo
-      = link_to "DO Coalition", root_path
-    %nav.rk-navigation
-      %ul.rk-menu
-        %li.active.rk-menu__item
-          = link_to "Home", root_path, class: 'rk-menu__link'
-        %li.rk-menu__item
-          = link_to "Actions", 
-          %a.rk-menu__link{:href => "portfolio.html"} Actions
-        %li.rk-menu__item
-          %a.rk-menu__link{:href => "blog.html"} Blog
-        %li.rk-menu__item
-          %a.rk-menu__link{:href => "#0"} Pages
-          %nav.rk-menu__sub
-            %ul.rk-container
-              %li.rk-menu__item
-                %a.rk-menu__link{:href => "about.html"} About
-              %li.rk-menu__item
-                %a.rk-menu__link{:href => "documentation.html"} Documentation
-              %li.rk-menu__item
-                %a.rk-menu__link{:href => "design-styles.html"} Design Styles
-        %li.rk-menu__item
-          %a.rk-menu__link{:href => "contact.html"} Contact Us
-      %form.rk-search
-        %input#urku-search.rk-search-field{:placeholder => "Search", :type => "text"}/
-        %label{:for => "urku-search"}
-          %svg
-            %use{"xlink:href" => "assets/img/symbols.svg#icon-search"}
 %section.ae-container-fluid.rk-main
   %input#layout-base.layout-ctrl-input{:checked => "checked", :name => "layout-ctrl", :type => "radio"}/
   .ae-container-fluid.rk-layout-ctrl-cont
@@ -122,38 +84,4 @@
             .item-meta
               %h2 Migas artisan
               %p Photography
-  %footer.ae-container-fluid.rk-footer
-    .ae-grid.ae-grid--collapse
-      .ae-grid__item.item-lg-4.au-xs-ta-center.au-lg-ta-left
-        %ul.rk-menu.rk-footer-menu
-          %li.rk-menu__item
-            %a.rk-menu__link{:href => "about.html"} About
-          %li.rk-menu__item
-            %a.rk-menu__link{:href => "documentation.html"} Docs
-          %li.rk-menu__item
-            %a.rk-menu__link{:href => "contact.html"} Contact
-        %p.rk-footer__text.rk-footer__copy
-          %span.ae-u-bold ©
-          = succeed "All" do
-            %span.ae-u-bolder 2015 URKU PORTFOLIO
-      .ae-grid__item.item-lg-4.au-xs-ta-center
-        %a.rk-social-btn{:href => "#0"}
-          %svg
-            %use{"xlink:href" => "assets/img/symbols.svg#icon-facebook"}
-        %a.rk-social-btn{:href => "#0"}
-          %svg
-            %use{"xlink:href" => "assets/img/symbols.svg#icon-twitter"}
-        %a.rk-social-btn{:href => "#0"}
-          %svg
-            %use{"xlink:href" => "assets/img/symbols.svg#icon-pinterest"}
-        %a.rk-social-btn{:href => "#0"}
-          %svg
-            %use{"xlink:href" => "assets/img/symbols.svg#icon-tumblr"}
-      .ae-grid__item.item-lg-4.au-xs-ta-center.au-lg-ta-right
-        %p.rk-footer__text.rk-footer__contact
-          %span.ae-u-bold Email:
-          %span.ae-u-bolder
-            %a.rk-dark-color{:href => "#0"} contact@urkuportfolio.com
-        %p.rk-footer__text.rk-footer__by
-          Theme by
-          %a.ae-u-bolder{:href => "http://pixeden.com"} Pixeden.
+  

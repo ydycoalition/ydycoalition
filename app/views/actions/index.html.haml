@@ -1,0 +1,8 @@
+.ae-masonry.ae-masonry-md-2.ae-masonry-xl-4
+  - @actions.each do |action|
+    / = link_to action_path, class: 'rk-item ae-masonry__item'
+    %a.rk-item.ae-masonry__item{:href => "portfolio-item.html"}
+      = image_tag action.image_url
+      .item-meta
+        %h2= action.name
+        %p= action.method
