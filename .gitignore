@@ -22,7 +22,7 @@ config/application.yml
 ##############################################
 /log/*
 !/log/.keep
-/tmp
+tmp
 
 ##############################################
 # Ignore local asset pipline cache files
